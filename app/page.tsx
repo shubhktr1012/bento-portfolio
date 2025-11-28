@@ -1,0 +1,16 @@
+import { Link } from "@heroui/link";
+import { Snippet } from "@heroui/snippet";
+import { Code } from "@heroui/code";
+import { button as buttonStyles } from "@heroui/theme";
+
+import { siteConfig } from "@/config/site";
+
+export default function Home() {
+  return (
+    <div className="grid grid-cols-3 gap-4">
+      <div className="col-span-2">
+        <h1 className="text-4xl font-bold">Hello World</h1>
+      </div>
+    </div>
+  );
+}
