@@ -12,6 +12,9 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
+        moranga: ["var(--font-moranga)"],
+        silka: ["var(--font-silka)"],
+        sfPro: ["var(--font-sf-pro)"],
       },
     },
   },

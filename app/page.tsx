@@ -8,9 +8,7 @@ import { siteConfig } from "@/config/site";
 export default function Home() {
   return (
     <div className="grid grid-cols-3 gap-4">
-      <div className="col-span-2">
-        <h1 className="text-4xl font-bold">Hello World</h1>
-      </div>
+
     </div>
   );
 }
