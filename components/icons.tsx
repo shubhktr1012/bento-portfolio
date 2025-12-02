@@ -17,6 +17,37 @@ export const Logo = ({
   />
 );
 
+export const LinkedInIcon = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/linkedin.png"
+    alt="LinkedIn Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
+export const MusicIcon = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/musiclogo.png"
+    alt="Music Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
+
 export const TwitterIcon: React.FC<IconSvgProps> = ({
   size = 24,
   width,
