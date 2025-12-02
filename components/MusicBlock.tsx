@@ -34,10 +34,10 @@ export const MusicBlock = () => {
                                 className="w-[3px] bg-[#fe5263] rounded-full"
                             />
                         </div>
-                        <h2 className="text-xs font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
+                        <h2 className="text-[10px] font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
                     </div>
-                    <h1 className="text-md font-moranga text-black">No Idea</h1>
-                    <h3 className="text-xs font-sf-pro text-text-black tracking-wide">Don Toliver</h3>
+                    <h1 className="text-lg font-moranga text-black">No Idea</h1>
+                    <h3 className="text-[10px] font-sf-pro text-text-black tracking-wide">Don Toliver</h3>
                 </div>
             </div>
         </BentoCard>

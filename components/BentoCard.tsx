@@ -13,10 +13,9 @@ interface BentoCardProps extends CardProps {
 export const BentoCard = ({ children, className, noPadding = false, ...props }: BentoCardProps) => {
     return (
         <Card
-            className={cn("h-full w-full rounded-[25px]", className)}
+            className={cn("h-full w-full rounded-[25px] transition-shadow duration-300 hover:shadow-[0_0_28px_-9px_rgba(0,0,0,0.15)]", className)}
             shadow="none"
             radius="lg"
-            isHoverable
             {...props}
         >
             <CardBody className={noPadding ? "p-0 overflow-hidden" : "px-5 overflow-hidden"}>

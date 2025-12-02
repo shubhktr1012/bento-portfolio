@@ -2,6 +2,7 @@
 
 import { BentoCard } from "./BentoCard";
 import { Image } from "@heroui/react";
+import { InfoButton } from "./InfoButton";
 
 export const Project2 = () => {
     return (
@@ -16,6 +17,9 @@ export const Project2 = () => {
                 />
             </div>
 
+            <div className="absolute bottom-3 left-3 z-20">
+                <InfoButton />
+            </div>
         </BentoCard>
     );
 }

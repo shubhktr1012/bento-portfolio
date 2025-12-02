@@ -18,7 +18,7 @@ import { Logo } from "@/components/icons";
 export const Navbar = () => {
 
   return (
-    <header className="sticky top-0 z-50 w-full flex flex-col gap-4">
+    <header className="relative z-50 w-full flex flex-col gap-4 lg:sticky lg:top-0">
       <HeroUINavbar maxWidth="2xl" position="static" className="bg-transparent data-[menu-open=true]:border-none border-none backdrop-blur-none backdrop-saturate-100">
         <NavbarContent className="lg:hidden w-full" justify="center">
           <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -79,7 +79,7 @@ export const Navbar = () => {
 
       </HeroUINavbar>
 
-      <div className="w-full flex justify-center pb-4 lg:hidden">
+      <div className="sticky top-0 z-50 w-full flex justify-center pb-4 lg:hidden bg-background/70 backdrop-blur-lg">
         <Tabs
           classNames={{
             tabList: "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
