@@ -13,32 +13,16 @@ import { Website2 } from "@/components/Website2";
 import { FocusBlock } from "@/components/FocusBlock";
 import { ServicesBlock } from "@/components/ServicesBlock";
 import { Website3 } from "@/components/Website3";
-import { BackUpBlock } from "@/components/BackUpBlock";
+import { ToggleBlock } from "@/components/ToggleBlock";
+import { BackToTopBlock } from "@/components/BackToTopBlock";
+import { BentoGrid } from "@/components/BentoGrid";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4 max-w-[400px] mx-auto">
-      <BioBlock />
-      <LocationBlock />
-      <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col gap-4">
-          <SocialsBlock />
-          <Project2 />
-          <MusicBlock />
-          <Website2 />
-        </div>
-        <div className="flex flex-col gap-4">
-          <Project1 />
-          <StatusBlock />
-          <Website1 />
-          <FocusBlock />
-        </div>
+    <main className="min-h-screen dark:bg-gray-950">
+      <div className="mx-auto max-w-[1200px]">
+        <BentoGrid />
       </div>
-      <ServicesBlock />
-      <div className="grid grid-cols-2 gap-4">
-        <Website3 />
-        <BackUpBlock />
-      </div>
-    </div>
+    </main>
   );
 }

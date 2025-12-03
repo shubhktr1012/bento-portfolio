@@ -228,7 +228,7 @@ export const MoonFilledIcon = ({
 );
 
 export const SunFilledIcon = ({
-  size = 24,
+  size = 28,
   width,
   height,
   ...props

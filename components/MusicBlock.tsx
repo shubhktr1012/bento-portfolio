@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 
 export const MusicBlock = () => {
     return (
-        <BentoCard className="aspect-square bg-white h-auto shrink-0">
-            <div className="flex flex-col justify-around h-full">
+        <BentoCard className="xxs:aspect-square sm:aspect-square max-[1199px]:min-[740px]:aspect-auto max-[1199px]:min-[740px]:h-full bg-white">
+            <div className="md:px-4 flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
                     <NextLink
                         className="flex justify-start items-center gap-1"
@@ -17,12 +17,14 @@ export const MusicBlock = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <MusicIcon />
+                        <MusicIcon
+                            className="md:w-10 md:h-10"
+                        />
                     </NextLink>
                 </div>
                 <div className="flex flex-col">
                     <div className="flex justify-start items-center gap-1.5">
-                        <div className="flex items-end gap-0.5 h-3">
+                        <div className="flex items-end gap-0.5 h-4">
                             <motion.div
                                 animate={{ height: ["20%", "100%", "20%"] }}
                                 transition={{ repeat: Infinity, ease: "easeInOut", duration: 0.85 }}
@@ -39,10 +41,10 @@ export const MusicBlock = () => {
                                 className="w-[3px] bg-[#fe5263] rounded-full"
                             />
                         </div>
-                        <h2 className="text-[10px] font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
+                        <h2 className="text-[10px] md:text-[14px] font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
                     </div>
-                    <h1 className="text-lg font-moranga text-black">No Idea</h1>
-                    <h3 className="text-[10px] font-sf-pro text-text-black tracking-wide">Don Toliver</h3>
+                    <h1 className="text-lg md:text-3xl font-moranga text-black">No Idea</h1>
+                    <h3 className="text-[10px] md:text-[14px] font-sf-pro text-text-black tracking-wide">Don Toliver</h3>
                 </div>
             </div>
         </BentoCard>

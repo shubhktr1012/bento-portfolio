@@ -16,16 +16,18 @@ export const FocusBlock = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <GithubIcon />
+                        <GithubIcon
+                            className="md:w-8 md:h-8"
+                        />
                     </NextLink>
                 </div>
                 <div className="flex flex-col">
                     <div className="flex justify-start items-center gap-1.5">
                         <Image src="/current_focus.png" alt="Focus Icon" width={12} height={12} />
-                        <h2 className="text-[10px] font-sf-pro-medium text-[#7ED699] tracking-wide">Current Focus</h2>
+                        <h2 className="text-[10px] md:text-[12px] font-sf-pro-medium text-[#7ED699] tracking-wide">Current Focus</h2>
                     </div>
-                    <h1 className="text-lg font-moranga text-black">Building SaaS</h1>
-                    <h3 className="text-[10px] font-sf-pro text-text-black tracking-wide">Ferrals Co. (MVP)</h3>
+                    <h1 className="text-lg md:text-xl font-moranga text-black">Building SaaS</h1>
+                    <h3 className="text-[10px] md:text-[12px] font-sf-pro text-text-black tracking-wide">Ferrals Co. (MVP)</h3>
                 </div>
             </div>
         </BentoCard>

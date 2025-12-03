@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const LocationBlock = () => {
     return (
-        <BentoCard className="aspect-[2/1] group" noPadding>
+        <BentoCard className="aspect-[2/1] group max-[1199px]:min-[740px]:aspect-square max-[1199px]:min-[740px]:min-w-[180px] max-[1199px]:min-[740px]:max-w-[180px] max-[1199px]:min-[740px]:min-h-[180px] max-[1199px]:min-[740px]:max-h-[180px]" noPadding>
             <div className="relative w-full h-full">
                 <Image
                     src="/portfolio-map.png"
