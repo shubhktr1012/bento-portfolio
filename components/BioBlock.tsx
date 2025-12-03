@@ -5,7 +5,7 @@ import { Image } from "@heroui/react";
 
 export const BioBlock = () => {
     return (
-        <BentoCard className="aspect-square md:min-h-[376px] md:max-h-[376px] max-[1199px]:min-[740px]:min-w-[376px] max-[1199px]:min-[740px]:max-w-[376px] ">
+        <BentoCard className="aspect-square lg:aspect-auto">
             <div className="flex flex-col justify-around h-full md:px-2">
                 <div className="flex justify-around items-start md:justify-between">
                     <Image
