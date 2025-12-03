@@ -204,6 +204,21 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
   );
 };
 
+export const UpArrowIcon = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/up-arrow.png"
+    alt="Up Arrow Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
 
 export const MoonFilledIcon = ({
   size = 24,

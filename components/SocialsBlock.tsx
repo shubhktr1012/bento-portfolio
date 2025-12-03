@@ -7,7 +7,7 @@ import NextLink from "next/link";
 
 export const SocialsBlock = () => {
     return (
-        <BentoCard className="aspect-square h-auto shrink-0 group relative overflow-hidden">
+        <BentoCard className="aspect-square shrink-0 group relative overflow-hidden">
             <Image
                 src="/Instagram.jpeg"
                 alt="Instagram"

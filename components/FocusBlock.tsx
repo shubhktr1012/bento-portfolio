@@ -7,7 +7,7 @@ import { Image } from "@heroui/react";
 
 export const FocusBlock = () => {
     return (
-        <BentoCard className="aspect-square bg-white h-auto shrink-0">
+        <BentoCard className="aspect-square bg-white shrink-0">
             <div className="flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
                     <NextLink

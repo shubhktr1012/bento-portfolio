@@ -7,7 +7,7 @@ import { SunFilledIcon } from "./icons";
 
 export const ToggleBlock = () => {
     return (
-        <BentoCard className="aspect-square bg-white flex items-center justify-center cursor-pointer group relative overflow-hidden h-auto shrink-0">
+        <BentoCard className="aspect-square bg-white flex items-center justify-center cursor-pointer group relative overflow-hidden shrink-0">
             <div className="flex flex-col justify-center items-center h-full">
                 <Switch
                     defaultSelected={false}

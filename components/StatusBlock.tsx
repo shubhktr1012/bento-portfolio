@@ -7,7 +7,7 @@ import { LinkedInIcon } from "./icons";
 
 export const StatusBlock = () => {
     return (
-        <BentoCard className="aspect-square bg-white h-auto shrink-0">
+        <BentoCard className="aspect-square bg-white">
             <div className="flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
                     <NextLink
