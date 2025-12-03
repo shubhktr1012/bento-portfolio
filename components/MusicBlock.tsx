@@ -18,7 +18,7 @@ export const MusicBlock = () => {
                         rel="noopener noreferrer"
                     >
                         <MusicIcon
-                            className="md:w-10 md:h-10"
+                            className="md:w-10 md:h-10 lg:w-12 lg:h-12"
                         />
                     </NextLink>
                 </div>
