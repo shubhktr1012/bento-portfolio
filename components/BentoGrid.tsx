@@ -25,10 +25,17 @@ import { useState, useEffect } from "react";
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const rowHeights: { [key: string]: number } = {
-    lg: 160,
-    md: 185,
+    lg: 280,
+    md: 183,
     sm: 165,
     xxs: 165,
+};
+
+const margins: { [key: string]: [number, number] } = {
+    lg: [15, 15],
+    md: [15, 15],
+    sm: [10, 10],
+    xxs: [10, 10],
 };
 
 export const BentoGrid = () => {
@@ -52,11 +59,13 @@ export const BentoGrid = () => {
     if (!mounted) return null;
 
     return (
-        <div className="mx-auto max-[739px]:w-[376px] min-[740px]:max-[1199px]:w-[780px]">
+        <div className="mx-auto max-[739px]:w-[376px] min-[740px]:max-[1199px]:w-[762px]">
             <ResponsiveGridLayout
+                key={JSON.stringify(layouts)}
                 layouts={layouts}
-                breakpoints={{ lg: 1200, md: 740, sm: 600, xxs: 0 }}
+                breakpoints={{ lg: 1180, md: 740, sm: 600, xxs: 0 }}
                 cols={{ lg: 4, md: 4, sm: 2, xxs: 2 }}
+                margin={margins}
                 isDraggable={width > 800}
                 isResizable={false}
                 rowHeight={rowHeights[currentBreakpoint]}
