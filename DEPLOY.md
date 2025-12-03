@@ -33,13 +33,7 @@ This project is optimized for deployment on [Vercel](https://vercel.com).
     | :--- | :--- |
     | `NEXT_PUBLIC_BASE_URL` | The domain of your deployed site (e.g., `https://your-portfolio.vercel.app`). You can set this after the first deployment once you have the URL. |
 
-5.  **Vercel KV (Redis) Setup**:
-    Your `middleware.ts` uses `@vercel/kv` for rate limiting. You **must** set up a KV database.
-    - After the project is created (even if the first build fails due to missing env vars), go to the **Storage** tab in your Vercel project dashboard.
-    - Click **"Create Database"** and select **KV**.
-    - Follow the prompts to create it and link it to your project.
-    - This will automatically add the necessary environment variables (`KV_URL`, `KV_REST_API_URL`, etc.) to your project.
-    - **Redeploy** your project if needed (Go to **Deployments** -> **Redeploy**).
+
 
 ## Verifying Deployment
 
