@@ -11,7 +11,12 @@ export const MusicBlock = () => {
         <BentoCard className="aspect-square bg-white h-auto shrink-0">
             <div className="flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
-                    <NextLink className="flex justify-start items-center gap-1" href="/">
+                    <NextLink
+                        className="flex justify-start items-center gap-1"
+                        href="https://music.apple.com/in/album/no-idea/1465000156?i=1465000157"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <MusicIcon />
                     </NextLink>
                 </div>

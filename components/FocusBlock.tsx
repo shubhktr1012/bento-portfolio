@@ -10,7 +10,12 @@ export const FocusBlock = () => {
         <BentoCard className="aspect-square bg-white h-auto shrink-0">
             <div className="flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
-                    <NextLink className="flex justify-start items-center gap-1" href="/">
+                    <NextLink
+                        className="flex justify-start items-center gap-1"
+                        href="https://github.com/shubhktr1012"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <GithubIcon />
                     </NextLink>
                 </div>
