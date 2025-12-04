@@ -19,6 +19,7 @@
     "@heroui/chip": "2.2.22",
     "@heroui/code": "2.2.21",
     "@heroui/divider": "2.2.20",
+    "@heroui/dom-animation": "^2.1.10",
     "@heroui/drawer": "2.2.24",
     "@heroui/dropdown": "2.3.27",
     "@heroui/form": "2.1.27",
