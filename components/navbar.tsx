@@ -6,13 +6,20 @@ import {
   NavbarBrand,
   NavbarItem,
 } from "@heroui/navbar";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem
+} from "@heroui/dropdown";
+import { Button } from "@heroui/button";
 import { Tabs, Tab } from "@heroui/tabs";
 import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { Logo } from "@/components/icons";
+import { Logo, ChevronDown, ArrowUpRightIcon, MailIcon } from "@/components/icons";
 
 export const Navbar = () => {
 
@@ -68,15 +75,46 @@ export const Navbar = () => {
           justify="end"
         >
           <NavbarItem className="hidden sm:flex gap-4">
-            <NextLink
-              className={clsx(
-                linkStyles({ color: "foreground" }),
-                "tracking-wider font-sf-pro"
-              )}
-              href="mailto:shubh12khatri@gmail.com"
-            >
-              Contact
-            </NextLink>
+            <Dropdown>
+              <DropdownTrigger>
+                <Button
+                  disableRipple
+                  className={clsx(
+                    linkStyles({ color: "foreground" }),
+                    "p-0 bg-transparent data-[hover=true]:bg-transparent tracking-wider font-sf-pro font-medium min-w-fit h-auto"
+                  )}
+                  endContent={<ChevronDown fill="currentColor" size={16} />}
+                  radius="sm"
+                  variant="light"
+                >
+                  More
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu
+                aria-label="More actions"
+                className="w-full"
+                itemClasses={{
+                  base: "gap-4",
+                }}
+              >
+                <DropdownItem
+                  key="resume"
+                  href="resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  startContent={<ArrowUpRightIcon size={16} />}
+                >
+                  Resume
+                </DropdownItem>
+                <DropdownItem
+                  key="email"
+                  href="mailto:shubh12khatri@gmail.com"
+                  startContent={<MailIcon size={16} />}
+                >
+                  Email
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
           </NavbarItem>
         </NavbarContent>
 
