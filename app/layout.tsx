@@ -1,10 +1,9 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
 import clsx from "clsx";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next"
 import { Providers } from "./providers";
-
 import { siteConfig } from "@/config/site";
 import { fontSans, moranga, sfPro } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -54,6 +53,8 @@ export default function RootLayout({
             </footer>
           </div>
         </Providers>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
