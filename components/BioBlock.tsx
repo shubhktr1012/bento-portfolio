@@ -18,9 +18,9 @@ export const BioBlock = () => {
                 </div>
                 <div className="px-4">
                     <p className="font-sf-pro text-md md:text-lg tracking-wide md:tracking-wider text-black dark:text-white">
-                        I’m <span className="font-moranga text-2xl md:text-3xl">shubh</span>, a developer and product designer
-                        from India. I’m interested in React, Node, Product
-                        Design, Jamstack, Startups, Cryptocurrencies and
+                        I’m <span className="font-moranga text-2xl md:text-3xl">shubh</span>,  and Full Stack Developer
+                        and Growth Engineer from India. I’m interested in Next.js, Python, Marketing Automation,
+                        Startups, Esports, and
                         Music.
                     </p>
                 </div>
