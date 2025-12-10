@@ -107,6 +107,21 @@ export const NextIcon = ({
   />
 );
 
+export const NextWhiteIcon = ({
+  size = 20,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/nextjs-white.svg"
+    alt="Next.js Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
 export const PostgresIcon = ({
   size = 20,
   width,
@@ -203,21 +218,6 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
     </svg>
   );
 };
-
-export const UpArrowIcon = ({
-  size = 24,
-  width,
-  height,
-  ...props
-}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
-  <img
-    src="/up-arrow.png"
-    alt="Up Arrow Icon"
-    width={size || width}
-    height={size || height}
-    {...props}
-  />
-);
 
 
 export const MoonFilledIcon = ({
@@ -338,6 +338,53 @@ export const ChevronDown = ({ fill, size, height, width, ...props }: any) => {
     </svg>
   );
 };
+
+export const ArrowUpBlackIcon = ({
+  size = 16,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/arrow-up-black.png"
+    alt="Arrow Up Black Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
+export const ArrowUpWhiteIcon = ({
+  size = 16,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/arrow-up-white.png"
+    alt="Arrow Up White Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
+
+export const ArrowUpRightWhiteIcon = ({
+  size = 16,
+  width,
+  height,
+  ...props
+}: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
+  <img
+    src="/arrow-upright-white.png"
+    alt="Arrow Up Right Icon"
+    width={size || width}
+    height={size || height}
+    {...props}
+  />
+);
+
 
 export const MailIcon = ({
   size = 24,

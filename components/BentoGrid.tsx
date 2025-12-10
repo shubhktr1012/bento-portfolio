@@ -66,26 +66,27 @@ export const BentoGrid = () => {
                 breakpoints={{ lg: 1180, md: 740, sm: 600, xxs: 0 }}
                 cols={{ lg: 4, md: 4, sm: 2, xxs: 2 }}
                 margin={margins}
+                draggableCancel=".no-drag"
                 isDraggable={width > 800}
                 isResizable={false}
                 rowHeight={rowHeights[currentBreakpoint]}
                 onBreakpointChange={(newBreakpoint) => setCurrentBreakpoint(newBreakpoint)}
                 className="layout"
             >
-                <div key="bio"><BioBlock /></div>
-                <div key="location"><LocationBlock /></div>
-                <div key="project1"><Project1 /></div>
-                <div key="project2"><Project2 /></div>
-                <div key="music"><MusicBlock /></div>
-                <div key="website1"><Website1 /></div>
-                <div key="status"><StatusBlock /></div>
-                <div key="socials"><SocialsBlock /></div>
-                <div key="toggle"><ToggleBlock /></div>
-                <div key="website2"><Website2 /></div>
-                <div key="services"><ServicesBlock /></div>
-                <div key="website3"><Website3 /></div>
-                <div key="focus"><FocusBlock /></div>
-                <div key="backToTop"><BackToTopBlock /></div>
+                <div key="bio" className="select-none"><BioBlock /></div>
+                <div key="location" className="select-none"><LocationBlock /></div>
+                <div key="project1" className="select-none"><Project1 /></div>
+                <div key="project2" className="select-none"><Project2 /></div>
+                <div key="music" className="select-none"><MusicBlock /></div>
+                <div key="website1" className="select-none"><Website1 /></div>
+                <div key="status" className="select-none"><StatusBlock /></div>
+                <div key="socials" className="select-none"><SocialsBlock /></div>
+                <div key="toggle" className="select-none"><ToggleBlock /></div>
+                <div key="website2" className="select-none"><Website2 /></div>
+                <div key="services" className="select-none"><ServicesBlock /></div>
+                <div key="website3" className="select-none"><Website3 /></div>
+                <div key="focus" className="select-none"><FocusBlock /></div>
+                <div key="backToTop" className="select-none"><BackToTopBlock /></div>
             </ResponsiveGridLayout>
         </div>
     );

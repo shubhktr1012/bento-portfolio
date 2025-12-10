@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export const MusicBlock = () => {
     return (
-        <BentoCard className="xxs:aspect-square sm:aspect-square max-[1199px]:min-[740px]:aspect-auto max-[1199px]:min-[740px]:h-full bg-white">
+        <BentoCard className="xxs:aspect-square sm:aspect-square max-[1199px]:min-[740px]:aspect-auto max-[1199px]:min-[740px]:h-full bg-white dark:bg-[#0d1117]">
             <div className="md:px-4 flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
                     <NextLink
@@ -18,7 +18,7 @@ export const MusicBlock = () => {
                         rel="noopener noreferrer"
                     >
                         <MusicIcon
-                            className="md:w-10 md:h-10 lg:w-12 lg:h-12"
+                            className="w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12"
                         />
                     </NextLink>
                 </div>
@@ -41,10 +41,10 @@ export const MusicBlock = () => {
                                 className="w-[3px] bg-[#fe5263] rounded-full"
                             />
                         </div>
-                        <h2 className="text-[10px] md:text-[14px] font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
+                        <h2 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
                     </div>
-                    <h1 className="text-lg md:text-3xl font-moranga text-black">No Idea</h1>
-                    <h3 className="text-[10px] md:text-[14px] font-sf-pro text-text-black tracking-wide">Don Toliver</h3>
+                    <h1 className="text-lg md:text-lg xl:text-3xl font-moranga text-black dark:text-white">No Idea</h1>
+                    <h3 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro text-black dark:text-white tracking-wide">Don Toliver</h3>
                 </div>
             </div>
         </BentoCard>
