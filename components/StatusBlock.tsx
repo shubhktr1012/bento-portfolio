@@ -11,7 +11,7 @@ export const StatusBlock = () => {
             <div className="xl:px-4 flex flex-col justify-around h-full">
                 <div className="flex justify-start items-start">
                     <NextLink
-                        className="flex justify-start items-center gap-1"
+                        className="flex justify-start items-center gap-1 relative z-20 cursor-pointer no-drag"
                         href="https://www.linkedin.com/in/shubhkhatri1209/"
                         target="_blank"
                         rel="noopener noreferrer"

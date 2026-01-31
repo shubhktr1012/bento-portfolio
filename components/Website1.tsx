@@ -17,7 +17,7 @@ export const Website1 = () => {
                 />
             </div>
             <div className="absolute bottom-3 left-3 z-20">
-                <InfoButton label="Charlie Popcorn" />
+                <InfoButton label="Charlie Popcorn" link="https://charlie-popcorn.vercel.app/" />
             </div>
         </BentoCard>
     );

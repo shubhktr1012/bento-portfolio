@@ -21,7 +21,10 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { Logo, ChevronDown, ArrowUpRightIcon, MailIcon } from "@/components/icons";
 
+import { useFilter } from "@/context/filter-context";
+
 export const Navbar = () => {
+  const { activeCategory, setCategory } = useFilter();
 
   return (
     <header className="relative z-50 w-full flex flex-col gap-4">
@@ -44,6 +47,8 @@ export const Navbar = () => {
 
         <NavbarContent className="hidden sm:flex flex-wrap gap-4" justify="center">
           <Tabs
+            selectedKey={activeCategory}
+            onSelectionChange={(key) => setCategory(key as any)}
             classNames={{
               tabList: "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
               tab: "rounded-3xl",
@@ -51,19 +56,16 @@ export const Navbar = () => {
             }} className="hidden sm:flex gap-4 justify-start ml-2">
             {siteConfig.navItems.map((item) => (
               <Tab
-                key={item.href}
+                key={item.label}
                 title={
-                  <NextLink
+                  <span
                     className={clsx(
-                      linkStyles({ color: "foreground" }),
-                      "tracking-wider",
+                      "tracking-wider font-sf-pro text-foreground cursor-pointer px-2",
                     )}
-                    color="foreground"
-                    href={item.href}
                     style={{ fontFamily: "SF Pro Display" }}
                   >
                     {item.label}
-                  </NextLink>
+                  </span>
                 }
               />
             ))}
@@ -122,6 +124,8 @@ export const Navbar = () => {
 
       <div className="z-50 w-full flex justify-center pb-4 sm:hidden bg-background/70 backdrop-blur-lg">
         <Tabs
+          selectedKey={activeCategory}
+          onSelectionChange={(key) => setCategory(key as any)}
           classNames={{
             tabList: "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
             tab: "rounded-3xl",
@@ -129,24 +133,20 @@ export const Navbar = () => {
           }} className="flex gap-4 justify-start">
           {siteConfig.navItems.map((item) => (
             <Tab
-              key={item.href}
+              key={item.label}
               title={
-                <NextLink
+                <span
                   className={clsx(
-                    linkStyles({ color: "foreground" }),
-                    "tracking-wider font-sf-pro",
+                    "tracking-wider font-sf-pro text-foreground cursor-pointer px-2",
                   )}
-                  color="foreground"
-                  href={item.href}
                   style={{ fontFamily: "SF Pro Display" }}
                 >
                   {item.label}
-                </NextLink>
+                </span>
               }
             />
           ))}
         </Tabs>
-
       </div>
 
     </header>

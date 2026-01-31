@@ -26,8 +26,8 @@ export const FocusBlock = () => {
                         <Image src="/current_focus.png" alt="Focus Icon" width={12} height={12} />
                         <h2 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro-medium text-[#7ED699] tracking-wide">Current Focus</h2>
                     </div>
-                    <h1 className="text-lg md:text-lg xl:text-3xl font-moranga text-black dark:text-white">Building SaaS</h1>
-                    <h3 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro text-black dark:text-white tracking-wide">Ferrals Co. (MVP)</h3>
+                    <h1 className="text-lg md:text-lg xl:text-3xl font-moranga text-black dark:text-white">App Development</h1>
+                    <h3 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro text-black dark:text-white tracking-wide">Recovery Compass</h3>
                 </div>
             </div>
         </BentoCard>

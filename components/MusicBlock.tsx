@@ -43,7 +43,7 @@ export const MusicBlock = () => {
                         </div>
                         <h2 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro-medium text-[#FE5263] tracking-wide">On Repeat</h2>
                     </div>
-                    <h1 className="text-lg md:text-lg xl:text-3xl font-moranga text-black dark:text-white">No Idea</h1>
+                    <h1 className="text-lg md:text-lg xl:text-3xl font-moranga text-black dark:text-white">ATM</h1>
                     <h3 className="text-[10px] md:text-[12px] xl:text-[16px] font-sf-pro text-black dark:text-white tracking-wide">Don Toliver</h3>
                 </div>
             </div>
