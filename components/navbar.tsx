@@ -116,7 +116,7 @@ export const Navbar = () => {
                   base: "gap-4",
                 }}
               >
-                <DropdownItem
+                {/* <DropdownItem
                   key="resume"
                   href="resume.pdf"
                   rel="noopener noreferrer"
@@ -124,7 +124,7 @@ export const Navbar = () => {
                   target="_blank"
                 >
                   Resume
-                </DropdownItem>
+                </DropdownItem> */}
                 <DropdownItem
                   key="email"
                   href="mailto:shubh12khatri@gmail.com"
