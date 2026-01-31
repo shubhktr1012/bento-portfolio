@@ -10,7 +10,7 @@ import {
   Dropdown,
   DropdownTrigger,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
 } from "@heroui/dropdown";
 import { Button } from "@heroui/button";
 import { Tabs, Tab } from "@heroui/tabs";
@@ -19,8 +19,12 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { Logo, ChevronDown, ArrowUpRightIcon, MailIcon } from "@/components/icons";
-
+import {
+  Logo,
+  ChevronDown,
+  ArrowUpRightIcon,
+  MailIcon,
+} from "@/components/icons";
 import { useFilter } from "@/context/filter-context";
 
 export const Navbar = () => {
@@ -28,10 +32,17 @@ export const Navbar = () => {
 
   return (
     <header className="relative z-50 w-full flex flex-col gap-4">
-      <HeroUINavbar maxWidth="2xl" position="static" className="bg-transparent data-[menu-open=true]:border-none border-none backdrop-blur-none backdrop-saturate-100">
+      <HeroUINavbar
+        className="bg-transparent data-[menu-open=true]:border-none border-none backdrop-blur-none backdrop-saturate-100"
+        maxWidth="2xl"
+        position="static"
+      >
         <NavbarContent className="sm:hidden w-full" justify="center">
           <NavbarBrand as="li" className="gap-3 max-w-fit">
-            <NextLink className="flex justify-start items-center gap-1" href="/">
+            <NextLink
+              className="flex justify-start items-center gap-1"
+              href="/"
+            >
               <Logo />
             </NextLink>
           </NavbarBrand>
@@ -39,21 +50,30 @@ export const Navbar = () => {
 
         <NavbarContent className="hidden sm:flex" justify="start">
           <NavbarBrand as="li" className="gap-3 max-w-fit">
-            <NextLink className="flex justify-start items-center gap-1" href="/">
+            <NextLink
+              className="flex justify-start items-center gap-1"
+              href="/"
+            >
               <Logo />
             </NextLink>
           </NavbarBrand>
         </NavbarContent>
 
-        <NavbarContent className="hidden sm:flex flex-wrap gap-4" justify="center">
+        <NavbarContent
+          className="hidden sm:flex flex-wrap gap-4"
+          justify="center"
+        >
           <Tabs
-            selectedKey={activeCategory}
-            onSelectionChange={(key) => setCategory(key as any)}
+            className="hidden sm:flex gap-4 justify-start ml-2"
             classNames={{
-              tabList: "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
+              tabList:
+                "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
               tab: "rounded-3xl",
               cursor: "bg-white dark:bg-default-100 rounded-3xl",
-            }} className="hidden sm:flex gap-4 justify-start ml-2">
+            }}
+            selectedKey={activeCategory}
+            onSelectionChange={(key) => setCategory(key as any)}
+          >
             {siteConfig.navItems.map((item) => (
               <Tab
                 key={item.label}
@@ -72,10 +92,7 @@ export const Navbar = () => {
           </Tabs>
         </NavbarContent>
 
-        <NavbarContent
-          className="hidden sm:flex"
-          justify="end"
-        >
+        <NavbarContent className="hidden sm:flex" justify="end">
           <NavbarItem className="hidden sm:flex gap-4">
             <Dropdown>
               <DropdownTrigger>
@@ -83,7 +100,7 @@ export const Navbar = () => {
                   disableRipple
                   className={clsx(
                     linkStyles({ color: "foreground" }),
-                    "p-0 bg-transparent data-[hover=true]:bg-transparent tracking-wider font-sf-pro font-medium min-w-fit h-auto"
+                    "p-0 bg-transparent data-[hover=true]:bg-transparent tracking-wider font-sf-pro font-medium min-w-fit h-auto",
                   )}
                   endContent={<ChevronDown fill="currentColor" size={16} />}
                   radius="sm"
@@ -102,9 +119,9 @@ export const Navbar = () => {
                 <DropdownItem
                   key="resume"
                   href="resume.pdf"
-                  target="_blank"
                   rel="noopener noreferrer"
                   startContent={<ArrowUpRightIcon size={16} />}
+                  target="_blank"
                 >
                   Resume
                 </DropdownItem>
@@ -119,18 +136,20 @@ export const Navbar = () => {
             </Dropdown>
           </NavbarItem>
         </NavbarContent>
-
       </HeroUINavbar>
 
       <div className="z-50 w-full flex justify-center pb-4 sm:hidden bg-background/70 backdrop-blur-lg">
         <Tabs
-          selectedKey={activeCategory}
-          onSelectionChange={(key) => setCategory(key as any)}
+          className="flex gap-4 justify-start"
           classNames={{
-            tabList: "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
+            tabList:
+              "bg-stone-200/50 dark:bg-background dark:border dark:border-default-200/60 rounded-3xl p-1.5",
             tab: "rounded-3xl",
             cursor: "bg-white dark:bg-default-100 rounded-3xl",
-          }} className="flex gap-4 justify-start">
+          }}
+          selectedKey={activeCategory}
+          onSelectionChange={(key) => setCategory(key as any)}
+        >
           {siteConfig.navItems.map((item) => (
             <Tab
               key={item.label}
@@ -148,7 +167,6 @@ export const Navbar = () => {
           ))}
         </Tabs>
       </div>
-
     </header>
   );
 };

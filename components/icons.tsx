@@ -9,10 +9,10 @@ export const Logo = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/shubh.svg"
     alt="Logo"
-    width={size || width}
     height={size || height}
+    src="/shubh.svg"
+    width={size || width}
     {...props}
   />
 );
@@ -24,10 +24,10 @@ export const ArrowUpRightIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/arrow-upright.png"
     alt="Arrow Up Right Icon"
-    width={size || width}
     height={size || height}
+    src="/arrow-upright.png"
+    width={size || width}
     {...props}
   />
 );
@@ -39,10 +39,10 @@ export const InstagramIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/instagram-white-icon.png"
     alt="Instagram Icon"
-    width={size || width}
     height={size || height}
+    src="/instagram-white-icon.png"
+    width={size || width}
     {...props}
   />
 );
@@ -54,10 +54,10 @@ export const LinkedInIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/linkedin.png"
     alt="LinkedIn Icon"
-    width={size || width}
     height={size || height}
+    src="/linkedin.png"
+    width={size || width}
     {...props}
   />
 );
@@ -69,10 +69,10 @@ export const MusicIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/musiclogo.png"
     alt="Music Icon"
-    width={size || width}
     height={size || height}
+    src="/musiclogo.png"
+    width={size || width}
     {...props}
   />
 );
@@ -84,10 +84,10 @@ export const GithubIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/github.png"
     alt="GitHub Icon"
-    width={size || width}
     height={size || height}
+    src="/github.png"
+    width={size || width}
     {...props}
   />
 );
@@ -99,10 +99,10 @@ export const NextIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/nextjs.svg"
     alt="Next.js Icon"
-    width={size || width}
     height={size || height}
+    src="/nextjs.svg"
+    width={size || width}
     {...props}
   />
 );
@@ -114,10 +114,10 @@ export const NextWhiteIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/nextjs-white.svg"
     alt="Next.js Icon"
-    width={size || width}
     height={size || height}
+    src="/nextjs-white.svg"
+    width={size || width}
     {...props}
   />
 );
@@ -129,10 +129,10 @@ export const PostgresIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/postgresql.png"
     alt="PostgreSQL Icon"
-    width={size || width}
     height={size || height}
+    src="/postgresql.png"
+    width={size || width}
     {...props}
   />
 );
@@ -144,10 +144,10 @@ export const ReactIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/react.svg"
     alt="React Icon"
-    width={size || width}
     height={size || height}
+    src="/react.svg"
+    width={size || width}
     {...props}
   />
 );
@@ -159,10 +159,10 @@ export const PythonIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/python.svg"
     alt="Python Icon"
-    width={size || width}
     height={size || height}
+    src="/python.svg"
+    width={size || width}
     {...props}
   />
 );
@@ -174,10 +174,10 @@ export const GraphQLIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/graphql.svg"
     alt="GraphQL Icon"
-    width={size || width}
     height={size || height}
+    src="/graphql.svg"
+    width={size || width}
     {...props}
   />
 );
@@ -189,14 +189,13 @@ export const N8nIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/n8n.svg"
     alt="n8n Icon"
-    width={size || width}
     height={size || height}
+    src="/n8n.svg"
+    width={size || width}
     {...props}
   />
 );
-
 
 export const TwitterIcon: React.FC<IconSvgProps> = ({
   size = 24,
@@ -218,7 +217,6 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
     </svg>
   );
 };
-
 
 export const MoonFilledIcon = ({
   size = 24,
@@ -346,10 +344,10 @@ export const ArrowUpBlackIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/arrow-up-black.png"
     alt="Arrow Up Black Icon"
-    width={size || width}
     height={size || height}
+    src="/arrow-up-black.png"
+    width={size || width}
     {...props}
   />
 );
@@ -361,14 +359,13 @@ export const ArrowUpWhiteIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/arrow-up-white.png"
     alt="Arrow Up White Icon"
-    width={size || width}
     height={size || height}
+    src="/arrow-up-white.png"
+    width={size || width}
     {...props}
   />
 );
-
 
 export const ArrowUpRightWhiteIcon = ({
   size = 16,
@@ -377,14 +374,13 @@ export const ArrowUpRightWhiteIcon = ({
   ...props
 }: React.ImgHTMLAttributes<HTMLImageElement> & { size?: number }) => (
   <img
-    src="/arrow-upright-white.png"
     alt="Arrow Up Right Icon"
-    width={size || width}
     height={size || height}
+    src="/arrow-upright-white.png"
+    width={size || width}
     {...props}
   />
 );
-
 
 export const MailIcon = ({
   size = 24,

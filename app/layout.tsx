@@ -1,9 +1,11 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
+
 import { Providers } from "./providers";
+
 import { siteConfig } from "@/config/site";
 import { fontSans, moranga, sfPro } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
@@ -48,9 +50,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-8 px-12 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
-
-            </footer>
+            <footer className="w-full flex items-center justify-center py-3" />
           </div>
         </Providers>
         <SpeedInsights />

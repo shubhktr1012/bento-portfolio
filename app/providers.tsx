@@ -7,6 +7,7 @@ import { HeroUIProvider } from "@heroui/system";
 import { ToastProvider } from "@heroui/toast";
 import { useRouter } from "next/navigation";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+
 import { FilterProvider } from "@/context/filter-context";
 
 export interface ProvidersProps {
@@ -24,17 +25,22 @@ declare module "@react-types/shared" {
 
 export function Providers({ children, themeProps }: ProvidersProps) {
   const router = useRouter();
-  const [toastPlacement, setToastPlacement] = React.useState<"bottom-right" | "bottom-center">("bottom-right");
+  const [toastPlacement, setToastPlacement] = React.useState<
+    "bottom-right" | "bottom-center"
+  >("bottom-right");
 
   React.useEffect(() => {
     const handleResize = () => {
-      setToastPlacement(window.innerWidth < 768 ? "bottom-center" : "bottom-right");
+      setToastPlacement(
+        window.innerWidth < 768 ? "bottom-center" : "bottom-right",
+      );
     };
 
     // Set initial
     handleResize();
 
     window.addEventListener("resize", handleResize);
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -42,9 +48,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
     <HeroUIProvider navigate={router.push}>
       <NextThemesProvider {...themeProps}>
         <ToastProvider placement={toastPlacement} toastOffset={10} />
-        <FilterProvider>
-          {children}
-        </FilterProvider>
+        <FilterProvider>{children}</FilterProvider>
       </NextThemesProvider>
     </HeroUIProvider>
   );
