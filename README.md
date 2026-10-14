@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://bento-portfolio-lilac.vercel.app">Live Demo (Vercel)</a>
+    <a href="https://shubhkhatri.vercel.app">Live Portfolio</a>
     <span> | </span>
     <a href="https://github.com/shubhktr1012/bento-portfolio">GitHub Repository</a>
   </h3>
@@ -57,4 +57,4 @@ npm install
 npm run dev
 ```
 
-4. Open `http://localhost:3000` or visit the live deployment at `https://bento-portfolio-lilac.vercel.app`.
+4. Open `http://localhost:3000` or visit the live deployment at `https://shubhkhatri.vercel.app`.
