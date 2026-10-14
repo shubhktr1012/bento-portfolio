@@ -1,53 +1,60 @@
-# Next.js & HeroUI Template
+# Bento Portfolio
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+<div align="center">
+  <img src="public/portfolio-map.webp" alt="Bento Portfolio Preview" width="100%" />
+</div>
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+<div align="center">
+  <h3>
+    <a href="https://bento-portfolio-lilac.vercel.app">Live Demo (Vercel)</a>
+    <span> | </span>
+    <a href="https://github.com/shubhktr1012/bento-portfolio">GitHub Repository</a>
+  </h3>
+</div>
 
-## Technologies Used
+---
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Overview
 
-## How to Use
+A modern, responsive personal developer portfolio featuring a customizable bento grid canvas, live YouTube Music playback integration, dynamic dark mode switching, and performance optimizations.
 
-### Use the template with create-next-app
+---
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Core Engineering Features
 
+* **Interactive Bento Grid Canvas:** Fluid responsive layout powered by `react-grid-layout` with draggable and customizable card containers.
+* **Live Music Integration:** Endpoint syncing directly with YouTube Music InnerTube session tokens to stream currently playing and repeat tracks in real time.
+* **Component System & Theming:** Custom UI system built on HeroUI and Tailwind CSS with smooth transitions and persistent light/dark mode preference via `next-themes`.
+* **Telemetry & Vitals:** Instrumented with Vercel Analytics and Speed Insights for real-time Core Web Vitals monitoring.
+
+---
+
+## Tech Stack
+
+* **Framework:** Next.js 15 (App Router), React 19, Turbopack
+* **Styling:** Tailwind CSS, HeroUI, Framer Motion
+* **Layout Engine:** react-grid-layout
+* **Type Safety:** TypeScript
+* **Deployment:** Vercel Edge Network
+
+---
+
+## Local Development
+
+1. Clone the repository:
 ```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
+git clone https://github.com/shubhktr1012/bento-portfolio.git
+cd bento-portfolio
 ```
 
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-### Run the development server
-
+3. Launch development server:
 ```bash
 npm run dev
 ```
 
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+4. Open `http://localhost:3000` or visit the live deployment at `https://bento-portfolio-lilac.vercel.app`.
